@@ -231,3 +231,4 @@ _Pvt_Extensions
 .fake/
 /ClientApp/.angular/cache/15.1.6/babel-webpack
 /ClientApp/.angular/cache/15.1.6/angular-webpack/e284220e3d5c6b23a00b71bb0ec1807d72abaac7
+/Quiz.Web/ClientApp/.angular/cache/15.1.6

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -9,9 +9,11 @@
     <SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
     <RootNamespace>Quiz_Angular</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>d2ad328b-ae5f-4dc0-b25d-cd081407f30f</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="DateOnlyTimeOnly.AspNet" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.SpaProxy" Version="7.0.5" />
   </ItemGroup>
 
@@ -20,6 +22,15 @@
     <Content Remove="$(SpaRoot)**" />
     <None Remove="$(SpaRoot)**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Quiz.Infrastructure.Database\Quiz.Infrastructure.Database.csproj" />
+    <ProjectReference Include="..\Quiz.Infrastructure\Quiz.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Settings\" />
   </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
