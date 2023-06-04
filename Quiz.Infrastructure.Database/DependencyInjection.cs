@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Quiz.DataAccess.Data;
-using Quiz.DataAccess.Services;
+using Quiz.DataAccess.Services.DbMigrator;
 using Quiz.Infrastructure.Database.Settings;
 
 namespace Quiz.Infrastructure.Database;

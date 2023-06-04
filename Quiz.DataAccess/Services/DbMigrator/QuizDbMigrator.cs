@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Quiz.DataAccess.Data;
 
-namespace Quiz.DataAccess.Services;
+namespace Quiz.DataAccess.Services.DbMigrator;
 
-public class QuizDbMigrator: IQuizDbMigrator
+public class QuizDbMigrator : IQuizDbMigrator
 {
     private readonly QuizDbContext _context;
 

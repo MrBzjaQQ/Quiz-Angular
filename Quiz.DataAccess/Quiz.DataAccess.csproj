@@ -11,8 +11,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories\" />
-    <Folder Include="Services\" />
+    <Folder Include="Repositories\Base\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Quiz.Domain.Resources\Quiz.Domain.Resources.csproj" />
+    <ProjectReference Include="..\Quiz.Domain\Quiz.Domain.csproj" />
   </ItemGroup>
 
 </Project>

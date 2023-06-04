@@ -1,4 +1,4 @@
-﻿namespace Quiz.DataAccess.Services;
+﻿namespace Quiz.DataAccess.Services.DbMigrator;
 
 /// <summary>
 /// Database migrator. It runs migrations when application is started.
