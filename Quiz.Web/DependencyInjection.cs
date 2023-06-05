@@ -2,7 +2,9 @@
 using System.Text.Json.Serialization;
 using DateOnlyTimeOnly.AspNet.Converters;
 using Quiz.Application;
-using Quiz.Infrastructure.Database;
+using Quiz.Application.Account.Ports;
+using Quiz.DataAccess;
+using Quiz_Angular.Core.Authorization;
 using Quiz_Angular.Settings;
 
 namespace Quiz_Angular;
@@ -19,6 +21,9 @@ public static class DependencyInjection
         builder.Services
             .AddApplication()
             .AddDatabase(appSettings?.Database);
+
+        // Authentication & Authorization
+        builder.AddAuthorization();
 
         builder.Services.AddMvc().AddJsonOptions(jsonOptions =>
         {
@@ -53,5 +58,14 @@ public static class DependencyInjection
         app.MapFallbackToFile("index.html");
 
         return app;
+    }
+
+    private static WebApplicationBuilder AddAuthorization(this WebApplicationBuilder builder)
+    {
+        builder.Services
+            .AddHttpContextAccessor()
+            .AddScoped<ICurrentUser, CurrentUser>();
+
+        return builder;
     }
 }

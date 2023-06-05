@@ -1,4 +1,4 @@
-﻿namespace Quiz.Infrastructure.Database.Settings;
+﻿namespace Quiz.DataAccess.Settings;
 
 /// <summary>
 /// Settings for connecting to the database

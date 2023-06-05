@@ -1,4 +1,4 @@
-﻿using Quiz.Infrastructure.Database.Settings;
+﻿using Quiz.DataAccess.Settings;
 
 namespace Quiz_Angular.Settings;
 

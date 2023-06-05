@@ -14,23 +14,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quiz.Web", "Quiz.Web\Quiz.W
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Domain", "1_Domain", "{E41FF489-9402-4D17-956F-5E695395F2B6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quiz.Infrastructure.Database", "Quiz.Infrastructure.Database\Quiz.Infrastructure.Database.csproj", "{4E8A3DB0-5BBF-4881-BFE9-4760AE07A5C9}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quiz.Application", "Quiz.Application\Quiz.Application.csproj", "{096B93C6-E8B9-40A4-ABFE-E9D52ECDEBE8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quiz.Domain", "Quiz.Domain\Quiz.Domain.csproj", "{4A7D0D6D-6C0C-49E1-A564-6B73FDAA1EEA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quiz.Application.UnitTests", "Quiz.Application.UnitTests\Quiz.Application.UnitTests.csproj", "{FC31E147-1169-4CE5-A779-D4F8802A2B2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz.Infrastructure", "Quiz.Infrastructure\Quiz.Infrastructure.csproj", "{32D72173-F239-4D85-8D8C-16DEB930B00D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quiz.Infrastructure", "Quiz.Infrastructure\Quiz.Infrastructure.csproj", "{32D72173-F239-4D85-8D8C-16DEB930B00D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5_DataAccess", "5_DataAccess", "{D0020B72-4E00-4F4D-9783-1B163FF90C51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz.DataAccess", "Quiz.DataAccess\Quiz.DataAccess.csproj", "{F8B4407F-0623-43D1-8281-8FCDAFEF2358}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quiz.DataAccess", "Quiz.DataAccess\Quiz.DataAccess.csproj", "{F8B4407F-0623-43D1-8281-8FCDAFEF2358}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz.DataAccess.UnitTests", "Quiz.DataAccess.UnitTests\Quiz.DataAccess.UnitTests.csproj", "{C7CE1C7A-7B97-4C78-8B7B-6164DAA27415}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quiz.DataAccess.UnitTests", "Quiz.DataAccess.UnitTests\Quiz.DataAccess.UnitTests.csproj", "{C7CE1C7A-7B97-4C78-8B7B-6164DAA27415}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz.Domain.Resources", "Quiz.Domain.Resources\Quiz.Domain.Resources.csproj", "{2501CC4D-D680-4425-8CE5-1B1BA6ABE48E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quiz.Domain.Resources", "Quiz.Domain.Resources\Quiz.Domain.Resources.csproj", "{2501CC4D-D680-4425-8CE5-1B1BA6ABE48E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,10 +40,6 @@ Global
 		{4DDFCE96-22A1-4D1D-A85C-50CBABE4D4CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DDFCE96-22A1-4D1D-A85C-50CBABE4D4CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DDFCE96-22A1-4D1D-A85C-50CBABE4D4CA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4E8A3DB0-5BBF-4881-BFE9-4760AE07A5C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E8A3DB0-5BBF-4881-BFE9-4760AE07A5C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E8A3DB0-5BBF-4881-BFE9-4760AE07A5C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E8A3DB0-5BBF-4881-BFE9-4760AE07A5C9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{096B93C6-E8B9-40A4-ABFE-E9D52ECDEBE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{096B93C6-E8B9-40A4-ABFE-E9D52ECDEBE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{096B93C6-E8B9-40A4-ABFE-E9D52ECDEBE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -80,7 +74,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4DDFCE96-22A1-4D1D-A85C-50CBABE4D4CA} = {CF4E42A0-25E2-449F-BC72-E8A0078C3993}
-		{4E8A3DB0-5BBF-4881-BFE9-4760AE07A5C9} = {22CD01F7-F897-44B2-BB12-C8B404259390}
 		{096B93C6-E8B9-40A4-ABFE-E9D52ECDEBE8} = {9C8FAE8A-2934-4F24-B9D9-3C086E7F8463}
 		{4A7D0D6D-6C0C-49E1-A564-6B73FDAA1EEA} = {E41FF489-9402-4D17-956F-5E695395F2B6}
 		{FC31E147-1169-4CE5-A779-D4F8802A2B2A} = {B20E3776-0475-4900-BFA3-503CDA0989FE}

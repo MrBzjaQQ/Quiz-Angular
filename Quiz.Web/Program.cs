@@ -1,4 +1,4 @@
-using Quiz.Infrastructure.Database;
+using Quiz.DataAccess;
 using Quiz_Angular;
 
 var app = WebApplication

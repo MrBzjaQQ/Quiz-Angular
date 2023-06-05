@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -8,6 +8,14 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Quiz.DataAccess\Quiz.DataAccess.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Account\Ports\" />
+    <Folder Include="Cards\Ports\Contract\Response\" />
+    <Folder Include="Cards\Ports\Contract\Request\" />
+    <Folder Include="Packs\Ports\Contract\Response\" />
+    <Folder Include="Packs\Ports\Contract\Request\" />
   </ItemGroup>
 
 </Project>

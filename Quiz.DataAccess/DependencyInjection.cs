@@ -2,10 +2,11 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Quiz.DataAccess.Data;
+using Quiz.DataAccess.Repositories.Pack;
 using Quiz.DataAccess.Services.DbMigrator;
-using Quiz.Infrastructure.Database.Settings;
+using Quiz.DataAccess.Settings;
 
-namespace Quiz.Infrastructure.Database;
+namespace Quiz.DataAccess;
 
 public static class DependencyInjection
 {
@@ -17,6 +18,7 @@ public static class DependencyInjection
         services.AddDbContext<QuizDbContext>(options => options.UseNpgsql(settings.ConnectionString));
         services.AddScoped<IQuizDbContext>(provider => provider.GetRequiredService<QuizDbContext>());
         services.AddTransient<IQuizDbMigrator, QuizDbMigrator>();
+        services.AddRepositories();
 
         return services;
     }
@@ -34,5 +36,11 @@ public static class DependencyInjection
             Console.WriteLine(e);
             throw;
         }
+    }
+
+    private static IServiceCollection AddRepositories(this IServiceCollection services)
+    {
+        services.AddScoped<IPacksRepository, PacksRepository>();
+        return services;
     }
 }

@@ -46,10 +46,12 @@ public record Pack: IdEntity<long>
     public Pack(
         string name,
         DateTime now,
+        string author,
         IList<Card> cards)
     {
         Name = name;
         CreationDateTime = now;
         Cards = cards;
+        Author = author;
     }
 }

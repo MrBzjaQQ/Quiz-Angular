@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Quiz.Infrastructure.Database\Quiz.Infrastructure.Database.csproj" />
+    <ProjectReference Include="..\Quiz.Application\Quiz.Application.csproj" />
     <ProjectReference Include="..\Quiz.Infrastructure\Quiz.Infrastructure.csproj" />
   </ItemGroup>
 
